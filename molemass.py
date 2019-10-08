@@ -4,19 +4,9 @@ Dict1={}
 for i in range(len(names)):
     Dict1[names[i]]=masses[i]
 print(Dict1)
-str1="H"
-str2="C"
-str3="N"
-str4="O"
-str5="P"
-str6="S"
-str7=str1+str2+str3+str4+str5
-print(str7)
-str8='1.00794'
-str9='12.0107'
-str10='14.00674'
-str11='15.9994'
-str12='30.973761'
-str13='32.066'
-str14=(str8)+(str9)
-print(str14)
+def molemass(formula):
+    mass=0
+    for a in formula:
+        mass+=Dict1[a]
+    print(mass)
+molemass("CHHHH")
